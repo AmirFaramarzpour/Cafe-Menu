@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+      <div class="header-content">
+        <img src="https://i.postimg.cc/8CYXbvJF/icons8-fahrenheit-24.png" alt="Cafe Logo" class="logo">
+          <p class="header-text">Fahrenheit Café - Menu</p>
+
+
+      </div>
+  </header>
+    <main>
+        <section id="home" class="home">
+            <div class="background-gif"></div>
+            <div class="buttons">
+                <button id="menuButton">Open Menu</button>
+                <button id="contactButton">Contact & Socials</button>
+                <button id="locationButton">Location</button>
+            </div>
+        </section>
+        <section id="menu" class="content-section" style="display: none;">
+                    <!-- Category 1 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('hotDrinks')">نوشیدنی های گرم</button>
+                        <div id="hotDrinks" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">هات لوتوس</div>
+                                <div class="item-desc">کرم لوتوس، شیر، فوم شیر</div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('espressoBased')">نوشیدنی های بر پایه اسپرسو</button>
+                        <div id="espressoBased" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">اسپرسو سولو</div>
+                                <div class="item-desc"></div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('pourOverCoffee')">قهوه های دمی</button>
+                        <div id="pourOverCoffee" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">وی60</div>
+                                <div class="item-desc"></div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 4 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('coldEspresso')">نوشیدنی های سرد بر پایه اسپرسو</button>
+                        <div id="coldEspresso" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">آیس آمریکانو</div>
+                                <div class="item-desc">اسپرسو، آب، یخ</div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 5 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('teaAndHerbal')">چای و دمنوش</button>
+                        <div id="teaAndHerbal" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">چای سیاه</div>
+                                <div class="item-desc"></div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 6 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('flavoredMilk')">شیر طعم دار</button>
+                        <div id="flavoredMilk" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">شیر نوتلا</div>
+                                <div class="item-desc"></div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 7 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('coldDrinks')">نوشیدنی های سرد</button>
+                        <div id="coldDrinks" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">موهیتو</div>
+                                <div class="item-desc">لیمو، نعنا فلفلی، سودا</div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-name">موهیتو</div>
+                                <div class="item-desc">لیمو، نعنا فلفلی، سودا</div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                    <!-- Category 8 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('milkshakes')">میلک شیک ها</button>
+                        <div id="milkshakes" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">شیک نوتلا</div>
+                                <div class="item-desc">بستنی شکلاتی، نوتلا</div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+
+                    <!-- Category 9 -->
+                    <div class="menu-category">
+                        <button class="category-button" onclick="toggleCategory('Esmooti')">اسموتی ها</button>
+                        <div id="Esmooti" class="menu-items" style="display: none;">
+                            <div class="menu-item">
+                                <div class="item-name">ملون بری</div>
+                                <div class="item-desc"></div>
+                                <div class="item-price">قیمت</div>
+                            </div>
+                            <!-- Add more items for this category -->
+                        </div>
+                    </div>
+                </section>
+        <section id="contact" class="content-section" style="display: none;">
+            <h2>Contact and Socials</h2>
+            <div class="social-buttons">
+              <a href="https://www.instagram.com/fahrenheit.cafe.boutique/" target="_blank">
+  <img src="https://i.postimg.cc/fSN57MqD/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+</a>
+<p> Instagram </p>
+
+                <a href="#"><img src="https://i.postimg.cc/fSfCB11X/phone.png" alt="Phone: +98 9115004007" style="width: 50px; height: 50px;"></a>
+<p> +98 9115004007 </p>
+
+            </div>
+        </section>
+        <section id="location" class="content-section" style="display: none;">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12819.626950483826!2d53.0768733!3d36.5563616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f853f06339d8963%3A0xe94269628b7cd196!2z2qnYp9mB2Ycg2YHYp9ix2YbZh9in24zYqg!5e0!3m2!1sen!2s!4v1732651137341!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- <div id="map"></div> -->
+
+            <img src="https://i.postimg.cc/CdGchfd1/location.png" alt="Location" style="width: 25px; height: 25px;">
+            <p>Location: Mazandaran Province, Sari, Saba, Iran</p>
+            <h3> Everyday : 06:00 AM - 00:00 AM Friday : 11:00 AM - 00:00 AM </h3>
+        </section>
+    </main>
+    <footer>
+        <p>©Copyright Fahrenheit Cafe | Design: Amir </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

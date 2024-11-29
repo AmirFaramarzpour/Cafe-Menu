@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+body {
+    font-family: 'Lateef', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+button {
+    font-family: 'Lateef', sans-serif;
+}
+
+
+header {
+    background-color: #e6f5ed;
+    padding: 10px 0;
+    text-align: center;
+    height: 10px;
+
+}
+
+header .logo {
+    max-height: 80px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;; /* Moves the content to the bottom */
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://protoinfrastack-myfirstbucketb8884501-fnnzvxt2ee5v.s3.amazonaws.com/y2Lr3ymv9yqzGaHGDdRDvECkYfQrwi2Q4IKK.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.buttons {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 50px;
+    bottom: 20px;
+}
+
+button {
+    background-color: #090a09;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 1s;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #2b9127;
+}
+
+.category-button {
+    background-color: #71bd6a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.category-button:hover {
+    background-color: #2b9127;
+}
+
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-category {
+    margin-bottom: 20px;
+}
+
+.menu-category h2 {
+    color: #71bd6a;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.item-name, .item-price {
+    margin: 5px 0;
+}
+
+
+.item-desc {
+  color: #d17711
+}
+
+.item-price {
+    color: #71bd6a;
+    font-weight: bold;
+}
+
+.social-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: center;
+    text-align: left;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+footer {
+    background-color: #252626;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+    height: 40px;
+    justify-content: center;
+
+
+}
+
+
+
+.header-content {
+    position: relative;
+    text-align: center;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3a3b3a; /* Adjust color as needed */
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+
+
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
