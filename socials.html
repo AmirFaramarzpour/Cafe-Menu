@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socials - Fahrenheit Café</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact and Socials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: 'Source Code Pro', monospace;
+
+        }
+        header {
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+        }
+        header .logo {
+            max-height: 60px;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .social-icons a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 2rem;
+        }
+        .social-icons a:hover {
+            color: #098409;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,18 +50,13 @@
             <img src="https://ik.imagekit.io/amirfaramarzpour/Untitled%20design.png?updatedAt=1734992293442" alt="Cafe Logo" class="logo">
         </div>
     </header>
-    <main>
-        <section id="socials" class="content-section">
-            <h2>Contact and Socials</h2>
-            <div class="social-buttons">
-                <img src="https://ik.imagekit.io/amirfaramarzpour/Fahrenheit%20Art%20Work.png?updatedAt=1735043507471" alt="Fahrenheit Contact and socials">
-
-
-            </div>
-        </section>
+    <main class="content">
+        <h2>Contact Us</h2>
+        <p>Phone: +98 9115004007</p>
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/fahrenheit.cafe.boutique/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </main>
-
-    <script src="script.js"></script> <!-- Ensure this line is included -->
-
 </body>
 </html>
