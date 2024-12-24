@@ -15,9 +15,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #2e8f38;
             font-family: 'Source Code Pro', monospace;
-
         }
         header {
             padding: 10px 0;
@@ -42,21 +41,34 @@
         .social-icons a:hover {
             color: #098409;
         }
+        .phone {
+            cursor: pointer;
+            color: rgb(204, 193, 186);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://ik.imagekit.io/amirfaramarzpour/Untitled%20design.png?updatedAt=1734992293442" alt="Cafe Logo" class="logo">
-        </div>
-    </header>
     <main class="content">
+        <img src="https://ik.imagekit.io/amirfaramarzpour/Logo%20(6).png?updatedAt=1735067165975" alt="Cafe Logo" class="logo">
         <h2>Contact Us</h2>
-        <p>Phone: +98 9115004007</p>
+        <h3 class="phone" onclick="copyToClipboard('+98 9115004007')">Phone: +98 9115004007</h3>
         <h2>Follow Us</h2>
         <div class="social-icons">
             <a href="https://www.instagram.com/fahrenheit.cafe.boutique/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <h3>@fahrenheit.cafe.boutique</h3>
         </div>
     </main>
+    <script>
+        function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('شماره در کلیپبورد ذخیره شد');
+        }
+    </script>
 </body>
 </html>
