@@ -7,19 +7,20 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #2e8f38;
             font-family: 'Roboto', sans-serif;
             height: 100vh;
-            justify-content: center;
+            justify-content: top;
         }
         .map-container {
             width: 90%;
             height: 70vh;
             margin-bottom: 20px;
+            margin-top: 0px;
         }
         iframe {
             width: 100%;
@@ -29,12 +30,14 @@
         }
         .hours {
             font-size: 0.8rem;
-            color: #333;
+            color: #ebe1e1;
             text-align: center;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
+    <div class="hours">Fahrenheit Cafe on map</div>
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.9102555367945!2d53.07429477579143!3d36.55627678141147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f853f06339d8963%3A0xe94269628b7cd196!2z2qnYp9mB2Ycg2YHYp9ix2YbZh9in24zYqg!5e0!3m2!1sen!2s!4v1735050074618!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
