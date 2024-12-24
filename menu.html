@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Fahrenheit Café</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://ik.imagekit.io/amirfaramarzpour/Untitled%20design.png?updatedAt=1734992293442" alt="Cafe Logo" class="logo">
+        </div>
+    </header>
+    <main>
+        <section id="menu" class="content-section">
+
+            <!-- Category 1 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('espressoBased')">نوشیدنی های بر پایه اسپرسو</button>
+                <div id="espressoBased" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">اسپرسو سولو</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">High Robusta:40 | Commercial:55 | Special:60 </div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">	اسپرسو دوپیو</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">High Robusta:50 | Commercial:65 | Special:75 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آمریکانو</div>
+                        <div class="item-desc">اسپرسو، آب جوش</div>
+                        <div class="item-price">High Robusta:55 | Commercial:70 | Special:80 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">	آمریکانو شیرعسلی</div>
+                        <div class="item-desc">	اسپرسو، آب جوش، شیر عسلی</div>
+                        <div class="item-price">High Robusta:65 | Commercial:80 | Special:90 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">لاته</div>
+                        <div class="item-desc">	اسپرسو، شیر، فوم شیر</div>
+                        <div class="item-price">High Robusta:80 | Commercial:90 | Special:100 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">	لاته کارامل</div>
+                        <div class="item-desc">	اسپرسو، شیر، فوم شیر، کارامل</div>
+                        <div class="item-price">High Robusta:90 | Commercial:100 | Special:110 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">	لاته عسل دارچین</div>
+                        <div class="item-desc">	اسپرسو، شیر، فوم شیر، عسل، دارچین</div>
+                        <div class="item-price">High Robusta:95 | Commercial:105 | Special:125 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">کوکولاته</div>
+                        <div class="item-desc">اسپرسو، شیر، فوم شیر، سیروپ نارگیل، پودر نارگیل</div>
+                        <div class="item-price">High Robusta:90 | Commercial:100 | Special:110 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">موکا</div>
+                        <div class="item-desc">	اسپرسو، شیر، فوم شیر، سیروپ نارگیل، پودر نارگیل</div>
+                        <div class="item-price">High Robusta:90 | Commercial:100 | Special:110 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">کاپوچینو</div>
+                        <div class="item-desc">اسپرسو، شیر، فوم شیر زیاد</div>
+                        <div class="item-price">High Robusta:75 | Commercial:85 | Special:95 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">کورتادو</div>
+                        <div class="item-desc">اسپرسو، شیر</div>
+                        <div class="item-price">High Robusta:65 | Commercial:80 | Special:90 </div>
+                    </div>
+                </div>
+            </div>      
+            <!-- Category 2 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('pourOverCoffee')">قهوه های دمی</button>
+                <div id="pourOverCoffee" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">وی60</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">اوریگامی</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">ترک</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">یونانی</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">فرانسه</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">پرشین</div>
+                        <div class="item-desc">قهوه اصیل ایرانی به همراه هل و زعفران، شیرزعفران</div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                </div>
+            </div>
+            <!-- Category 3 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('hotDrinks')">نوشیدنی های گرم</button>
+                <div id="hotDrinks" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">هات لوتوس</div>
+                        <div class="item-desc">کرم لوتوس، شیر، فوم شیر</div>
+                        <div class="item-price">120</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">هات پسته</div>
+                        <div class="item-desc">کرم پسته، پودر پسته، شکلات سفید، شیر، فوم شیر</div>
+                        <div class="item-price">130</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هات پینات</div>
+                        <div class="item-desc">کره بادام زمینی، بادام زمینی، شکلات دارک، شیر، فوم شیر</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هات زعفران</div>
+                        <div class="item-desc">زعفران، پودر هل، شکلات سفید، شیر، فوم شیر</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">ماسالا</div>
+                        <div class="item-desc">ترکیبی از ادویه های هندی باطبع گرم، شیر، فوم شیر</div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هات چاکلت</div>
+                        <div class="item-desc">پودر شکلات، شکلات رنده شد، شیر، فوم شیر</div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هات چاکلت مارشملو</div>
+                        <div class="item-desc">پودر شکلات، شکلات رنده شد، مارشمالو، شیر، فوم شیر</div>
+                        <div class="item-price">105</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هات چاکلت فندق</div>
+                        <div class="item-desc">پودر شکلات، شکلات فندق، فندق، شیر، فوم شیر</div>
+                        <div class="item-price">110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر کاکائو</div>
+                        <div class="item-desc">پودر کامائو، شیر، شکر</div>
+                        <div class="item-price">70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">لاته ماچا</div>
+                        <div class="item-desc">پودر چای ماچا، شیر، فوم شیر</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر گرم</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">40</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر دارچین</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">45</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر کارامل</div>
+                        <div class="item-desc">شیر، کارامل دست ساز</div>
+                        <div class="item-price">50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر زعفران</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">60</div>
+                    </div>
+ 
+                </div>
+            </div>
+            <!-- Category 4 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('teaAndHerbal')">چای و دمنوش</button>
+                <div id="teaAndHerbal" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">چای سیاه</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">25</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">چای هلو</div>
+                        <div class="item-desc">چای سیاه آسام، هلو، زردآلو</div>
+                        <div class="item-price">70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">چای سبز لوندر</div>
+                        <div class="item-desc">چای سبز اعلاء، لوندر</div>
+                        <div class="item-price">70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">کوئین بری</div>
+                        <div class="item-desc">توت فرنگی، کرن بری، گل های معطر، زرشک وحشی</div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">استرابری کیس</div>
+                        <div class="item-desc">توت فرنگی، انبه، آناناس، سیب، آلوئه‌ورا، پاپایا، شیرین بیان</div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">گلدن وانیلا</div>
+                        <div class="item-desc">سیب، وانیل، میخک، شیرین بیان، دارچین</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">اپل پارادایس</div>
+                        <div class="item-desc">سیب، به، دارچین</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">مولن روژ</div>
+                        <div class="item-desc">به، ریشه چغندر، گل رز، گل ختمی</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">ویکتوریا سان ست</div>
+                        <div class="item-desc">زردچوبه، زنجبیل، فلفل سیاه، دارچین</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">لمون گرس</div>
+                        <div class="item-desc">لمون گرس، زنجبیل، نعنا</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">چای لاهیجان</div>
+                        <div class="item-desc">چای سیاه دستچین لاهیجان</div>
+                        <div class="item-price">50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">چای زعفران</div>
+                        <div class="item-desc">چای سیاه، زعفران</div>
+                        <div class="item-price">60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">چای مراکشی</div>
+                        <div class="item-desc">چای سیاه، نعنا، نبات</div>
+                        <div class="item-price">70</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category 5 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('coldEspresso')">نوشیدنی های سرد بر پایه اسپرسو</button>
+                <div id="coldEspresso" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">آیس آمریکانو</div>
+                        <div class="item-desc">اسپرسو، آب، یخ</div>
+                        <div class="item-price">High Robusta:55 | Commercial:70 | Special:80 </div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">آیس لاته</div>
+                        <div class="item-desc">اسپرسو، شیر، یخ</div>
+                        <div class="item-price">High Robusta:80 | Commercial:90 | Special:100 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آیس موکا</div>
+                        <div class="item-desc">اسپرسو، شیر، سیروپ، شکلات، یخ</div>
+                        <div class="item-price">High Robusta:90 | Commercial:100 | Special:110 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آیس کارامل ماکیاتو</div>
+                        <div class="item-desc">اسپرسو، شیر، سیروپ کارامل، یخ</div>
+                        <div class="item-price">High Robusta:90 | Commercial:100 | Special:110 </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">فراپه کارامل</div>
+                        <div class="item-desc">اسپرسو، شیر، یک اسکوپ بستنی، سیروپ کارامل، یخ</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">فراپه فندق</div>
+                        <div class="item-desc">اسپرسو، شیر، یک اسکوپ بستنی، سیروپ فندق، یخ</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">فراپه شکلات</div>
+                        <div class="item-desc">اسپرسو، شیر، یک اسکوپ بستنی، سیروپ شکلات، یخ</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آفوگاتو</div>
+                        <div class="item-desc">اسپرسو، یک اسکوپ بستنی</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آفوگاتو شکلات فندقی</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آفوگاتو لوتوس</div>
+                        <div class="item-desc">اسپرسو، یک اسکوپ بستنی، کرم لوتوس، بیسکوئیت لوتوس</div>
+                        <div class="item-price">120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آفوگاتو پسته</div>
+                        <div class="item-desc">اسپرسو، یک اسکوپ بستنی، کره پسته، پودر پسته</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">کوک اسپرسو</div>
+                        <div class="item-desc">اسپرسو، کوکاکولا</div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هایپ اسپرسو</div>
+                        <div class="item-desc">اسپرسو، هایپ</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آیس ماچا</div>
+                        <div class="item-desc">پودر چای ماچا، شیر، یخ</div>
+                        <div class="item-price">100</div>
+                    </div>
+                </div>
+            </div>    
+            <!-- Category 6 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('milkshakes')">میلک شیک ها</button>
+                <div id="milkshakes" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">شیک نوتلا</div>
+                        <div class="item-desc">بستنی شکلاتی، نوتلا</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">شیک لوتوس</div>
+                        <div class="item-desc">بستنی وانیلی، کرم لوتوس</div>
+                        <div class="item-price">150</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک پینات جلی</div>
+                        <div class="item-desc">بستی کاراملی، کره بادام زمینی، بادام زمینی، ژله آلبالو</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک چابانا</div>
+                        <div class="item-desc">بستنی شکلاتی، موز، شکلات</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک استوایی</div>
+                        <div class="item-desc">بستنی وانیلی، توت فرنگی، هلو، انبه، آناناس، نارگیل</div>
+                        <div class="item-price">150</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک بری</div>
+                        <div class="item-desc">بستنی وانیلی، توت فرنگی ، شاه توت</div>
+                        <div class="item-price">120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک منگونات</div>
+                        <div class="item-desc">بستنی وانیلی، کره پسته، انبه، نارگیل</div>
+                        <div class="item-price">180</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک چوکونات</div>
+                        <div class="item-desc">بستنی شکلاتی، کره بادام زمینی، بادام زمینی، شکلات</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیک نسکافه</div>
+                        <div class="item-desc">بستنی وانیلی، پودر قهوه</div>
+                        <div class="item-price">110</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category 7 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('Esmooti')">اسموتی ها</button>
+                <div id="Esmooti" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">ملون بری</div>
+                        <div class="item-desc">هندوانه، گلاب، لیمو، شاه توت، شکر</div>
+                        <div class="item-price">110</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">آمور</div>
+                        <div class="item-desc">توت فرنگی، شاه توت، آلبالو، آناناس، هلو، آب اناز</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">دراگون</div>
+                        <div class="item-desc">انبه، شاه توت، آلبالو، آناناس، هلو، آب انار</div>
+                        <div class="item-price">160</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">میکس بری</div>
+                        <div class="item-desc">توت فرنگی، تمشک، آلبالو، آب انار</div>
+                        <div class="item-price">120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">هاوائی</div>
+                        <div class="item-desc">آناناس، هلو، توت فرنگی، آب انبه، آلوئه‌ورا</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">کوکوکیس</div>
+                        <div class="item-desc">آناناس، نارگیل، هلو، آب آناناس</div>
+                        <div class="item-price">140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">گرین آیلند</div>
+                        <div class="item-desc">طالبی، انبه، آب آلوئه‌ورا </div>
+                        <div class="item-price">120</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category 8 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('flavoredMilk')">شیر طعم دار</button>
+                <div id="flavoredMilk" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">شیر نوتلا</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">شیر موز</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر موز پسته</div>
+                        <div class="item-desc">شیر، موز، کره پسته، پودر پسته</div>
+                        <div class="item-price">130</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر  پسته</div>
+                        <div class="item-desc">شیر، پسته، پودر پسته</div>
+                        <div class="item-price">160</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر بادام زمینی</div>
+                        <div class="item-desc">شیر، کره بادام زمینی، بادام زمینی</div>
+                        <div class="item-price">90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر توت فرنگی</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر انبه</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر موز انبه</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر طالبی</div>
+                        <div class="item-desc"></div>
+                        <div class="item-price">70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">شیر نارگیل</div>
+                        <div class="item-desc">شیر، پودر نارگیل</div>
+                        <div class="item-price">70</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category 9 -->
+            <div class="menu-category">
+                <button class="category-button" onclick="toggleCategory('coldDrinks')">نوشیدنی های سرد</button>
+                <div id="coldDrinks" class="menu-items" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-name">موهیتو</div>
+                        <div class="item-desc">لیمو، نعنا فلفلی، سودا</div>
+                        <div class="item-price">95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">رد موهیتو</div>
+                        <div class="item-desc">لیمو، نعنا فلفلی، پوره توت فرنگی، سیروپ کرن بری، سودا</div>
+                        <div class="item-price">105</div>
+                    </div>
+                    <!-- Add more items for this category -->
+                    <div class="menu-item">
+                        <div class="item-name">لیموناد</div>
+                        <div class="item-desc">لیمو، سودا</div>
+                        <div class="item-price">85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">جینجرلایم</div>
+                        <div class="item-desc">لیمو، زنجبیل، سودا</div>
+                        <div class="item-price">95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">بلواسکای</div>
+                        <div class="item-desc">لیمو، آب آناناس، آب پرتغال، سیروپ بلوکارسائو، سودا</div>
+                        <div class="item-price">100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">آلولایم</div>
+                        <div class="item-desc">لیمو، آلوئه‌ورا، سودا</div>
+                        <div class="item-price">100</div>
+                    </div>
+                </div>
+            </div>
+
+
+        
+        </section>
+    </main>
+    
+
+    <script src="script.js"></script> <!-- Ensure this line is included -->
+</body>
+</html>
