@@ -30,7 +30,7 @@ header .logo {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: urlhttps://ik.imagekit.io/amirfaramarzpour/IMG_20241226_125652_293.JPG?updatedAt=1735205328833'); /* Add your desired background image or GIF URL */
+    background-image: url('https://ik.imagekit.io/amirfaramarzpour/IMG_20241226_125652_293.JPG?updatedAt=1735205328833'); /* Add your desired background image or GIF URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
