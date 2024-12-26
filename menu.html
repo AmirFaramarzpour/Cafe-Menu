@@ -4,12 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Fahrenheit Café</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+        
+        /* Global Styles */
+        body {
+            background-image: url('https://ik.imagekit.io/amirfaramarzpour/IMG_20241226_130601_587.JPG?updatedAt=1735205883869');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: relative;
+        }
+        header img {
+            max-width: 100px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        button, .item-name, .item-desc, .item-price {
+            font-family: 'Lateef', sans-serif;
+        }
+        .content-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #e7e8d14d;
+            color: #000000;
+        }
+        /* Menu Styles */
+        .menu-category {
+            margin-bottom: 20px;
+        }
+        .category-button {
+            background-color: #0d4d0e;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 70%;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .category-button:hover {
+            background-color: #4fc64b;
+        }
+        .menu-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        .menu-item {
+            background-color: #cbcec7b1;
+            border: 1px solid #ffffff;
+            padding: 0px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .item-name {
+            margin: 5px 0;
+            font-size: 1.6em;
+        }
+        .item-desc {
+            color: #8d382d;
+            font-size: 1.4em;
+        }
+        .item-price {
+            color: #2A3132;
+            font-weight: regular;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-content">
             <img src="https://ik.imagekit.io/amirfaramarzpour/Untitled%20design.png?updatedAt=1734992293442" alt="Cafe Logo" class="logo">
+            <h1>Fahrenheit Café</h1>
         </div>
     </header>
     <main>
@@ -38,8 +133,8 @@
                         <div class="item-name">آمریکانو</div>
                         <div class="item-desc">اسپرسو، آب جوش</div>
                         <div class="item-price">High Robusta: 55 T</div>
-                        <div class="item-price">Commercial: 70 T</div>
-                        <div class="item-price">Special: 80 T</div>
+                        <div class="item-price">Commercial: 65 T</div>
+                        <div class="item-price">Special: 75 T</div>
                     </div>
                     <div class="menu-item">
                         <div class="item-name">	آمریکانو شیرعسلی</div>
@@ -142,7 +237,7 @@
                 <div id="hotDrinks" class="menu-items" style="display: none;">
                     <div class="menu-item">
                         <div class="item-name">هات لوتوس</div>
-                        <div class="item-desc">کرم لوتوس، شکلات سفید، شیر، فوم شیر</div>
+                        <div class="item-desc">کرم لوتوس، شیر، فوم شیر</div>
                         <div class="item-price">120 T</div>
                     </div>
                     <!-- Add more items for this category -->
@@ -168,12 +263,12 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-name">هات چاکلت</div>
-                        <div class="item-desc">پودر شکلات، شکلات رنده شده، شیر، فوم شیر</div>
+                        <div class="item-desc">پودر شکلات، شکلات رنده شد، شیر، فوم شیر</div>
                         <div class="item-price">90 T</div>
                     </div>
                     <div class="menu-item">
-                        <div class="item-name">هات چاکلت مارشمالو</div>
-                        <div class="item-desc">پودر شکلات، شکلات رنده شده، مارشمالو، شیر، فوم شیر</div>
+                        <div class="item-name">هات چاکلت مارشملو</div>
+                        <div class="item-desc">پودر شکلات، شکلات رنده شد، مارشمالو، شیر، فوم شیر</div>
                         <div class="item-price">105 T</div>
                     </div>
                     <div class="menu-item">
@@ -183,7 +278,7 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-name">شیر کاکائو</div>
-                        <div class="item-desc">پودر کاکائو، شیر، شکر</div>
+                        <div class="item-desc">پودر کامائو، شیر، شکر</div>
                         <div class="item-price">70 T</div>
                     </div>
                     <div class="menu-item">
@@ -198,7 +293,7 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-name">شیر دارچین</div>
-                        <div class="item-desc">شیر، پودر دارچین</div>
+                        <div class="item-desc"></div>
                         <div class="item-price">45 T</div>
                     </div>
                     <div class="menu-item">
@@ -266,7 +361,7 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-name">لمون گرس</div>
-                        <div class="item-desc">لمون گرس، زنجبیل، نعناء</div>
+                        <div class="item-desc">لمون گرس، زنجبیل، نعنا</div>
                         <div class="item-price">80 T</div>
                     </div>
                     <div class="menu-item">
@@ -281,7 +376,7 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-name">چای مراکشی</div>
-                        <div class="item-desc">چای سیاه، نعناء، نبات</div>
+                        <div class="item-desc">چای سیاه، نعنا، نبات</div>
                         <div class="item-price">70 T</div>
                     </div>
                 </div>
@@ -564,8 +659,19 @@
         
         </section>
     </main>
-    
-
-    <script src="script.js"></script> <!-- Ensure this line is included -->
+    <footer>
+        <p>&copy; 2025 Fahrenheit Café. | Design:Amir</p>
+    </footer>
+    <script>
+        // Function to toggle category visibility
+        function toggleCategory(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
