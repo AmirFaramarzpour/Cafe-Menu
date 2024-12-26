@@ -1,33 +1,73 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahrenheit Café - Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fahrenheit Cafe</title>
+    <style>
+        body {
+            background-image: url('https://ik.imagekit.io/amirfaramarzpour/IMG_20241226_130601_587.JPG?updatedAt=1735205883869');
+            background-size: cover;
+            font-family: "Trebuchet MS", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: relative;
+        }
+        header img {
+            max-width: 100px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin: auto 0 60px 0; /* Adjust this margin to move buttons higher above the footer */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav a {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 200px;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="https://ik.imagekit.io/amirfaramarzpour/Untitled%20design.png?updatedAt=1734992293442" alt="Cafe Logo" class="logo">
-        </div>
+        <img src="https://ik.imagekit.io/amirfaramarzpour/Untitled%20design.png?updatedAt=1734992293442" alt="Your Cafe Logo">
+        <h1>Fahrenheit Cafe</h1>
     </header>
-    <main>
-        <section id="home" class="home">
-            <div class="home-content">
-                <h2>Fahrenheit Café</h2>
-                <img src="https://ik.imagekit.io/amirfaramarzpour/temperature%20of%20happiness.png?updatedAt=1735069352315">
-                <div class="buttons">
-                    <a href="menu.html"><button>Menu</button></a>
-                    <a href="location.html"><button>Location</button></a>
-                    <a href="socials.html"><button>Contact and Socials</button></a>
-                </div>
-            </div>
-        </section>
-    </main>
+    <nav>
+        <a href="menu.html">Menu</a>
+        <a href="location.html">Location</a>
+        <a href="socials.html">Socials & Contact</a>
+    </nav>
     <footer>
-        <h4>© Copyright Fahrenheit Café | Design: Amir </h4>
+        <p>&copy; 2025 Fahrenheit Cafe. | Design: Amir</p>
     </footer>
-    <script src="script.js"></script> <!-- Ensure this line is included -->
 </body>
 </html>
